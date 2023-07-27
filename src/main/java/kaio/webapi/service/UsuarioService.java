@@ -19,6 +19,11 @@ public class UsuarioService {
     @Autowired
     private SetorRepositorio setorRepositorio;
 
+    public UsuarioService(SetorRepositorio setorRepositorio, UsuarioRepositorio repository) {
+        this.setorRepositorio = setorRepositorio;
+        this.repository = repository;
+    }
+
     public Usuario criarUsuario(Usuario usuario) {
         return repository.save(usuario);
     }
