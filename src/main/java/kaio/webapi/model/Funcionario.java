@@ -13,7 +13,7 @@ public class Funcionario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-    private String Nome;
+    private String nome;
     private Cargo cargo;
 
 }
