@@ -8,6 +8,4 @@ import java.util.List;
 
 public interface UsuarioRepositorio extends JpaRepository<Usuario, Long> {
     List<Usuario> findByLogin(String login);
-
-    List<Usuario> findBySetor(Setor setor);
 }

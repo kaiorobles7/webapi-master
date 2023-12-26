@@ -16,8 +16,8 @@ public class UsuarioController {
     @Autowired
     private UsuarioService service;
 
-    @Autowired
-    private SetorService setorService;
+
+    //private SetorService setorService;
 
     @GetMapping()
     public List<Usuario> getUsers(){
@@ -29,10 +29,10 @@ public class UsuarioController {
         return service.buscarUsuario(login);
     }
 
-    @GetMapping("/buscarUsuariosPorSetor/{setorId}")
+   /* @GetMapping("/buscarUsuariosPorSetor/{setorId}")
     public List<Usuario> getBuscaUsuariosporSetor(@PathVariable Long setorId){
         return service.buscarUsuariosPorSetor(setorId);
-    }
+    }*/
 
     @PostMapping("/create")
     public Usuario createUsers(@RequestBody Usuario usuario){
@@ -49,10 +49,10 @@ public class UsuarioController {
         return service.deletarUsuario(id);
     }
 
-    @PutMapping("/atualizaUsuariosPorSetor/{setorId}")
+   /* @PutMapping("/atualizaUsuariosPorSetor/{setorId}")
     public List<Usuario> atualizarUsuariosComSetor(@PathVariable Long setorId, @RequestBody List<Usuario> usuarios) {
         return service.atualizarUsuariosComSetor(setorId, usuarios);
-    }
+    }*/
 
 }
 

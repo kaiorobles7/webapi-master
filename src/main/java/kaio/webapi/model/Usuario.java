@@ -23,9 +23,6 @@ public class Usuario {
     @Getter
     private String password;
 
-    @Getter @Setter
-    @ManyToOne
-    private Setor setor;
 
     public Usuario(String login, String password) {
         this.login = login;

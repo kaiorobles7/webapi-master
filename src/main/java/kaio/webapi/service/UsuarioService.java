@@ -49,7 +49,7 @@ public class UsuarioService {
       return repository.findAll();
     }
 
-    public List<Usuario> atualizarUsuariosComSetor(Long setorId, List<Usuario> usuarios) {
+ /*   public List<Usuario> atualizarUsuariosComSetor(Long setorId, List<Usuario> usuarios) {
         Optional<Setor> setor = setorRepositorio.findById(setorId);
         for (Usuario usuario : usuarios) {
             usuario.setSetor(setor.get());
@@ -62,6 +62,6 @@ public class UsuarioService {
         Optional<Setor> setor = setorRepositorio.findById(setorId);
        return repository.findBySetor(setor.get());
 
-    }
+    }*/
 }
 
